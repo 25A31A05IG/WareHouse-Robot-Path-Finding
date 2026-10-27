@@ -468,6 +468,5 @@ These are suggested extensions and should not be interpreted as features that ar
 - Drop-off destination: The target location used to complete a delivery workflow.
 - Simulation: A software model of navigation rather than physical robot control.
 
-## 20. License
-
-No license is specified by this document. If the project will be distributed for reuse, choose an appropriate license, add a "LICENSE" file, and update the repository documentation.
+## Author
+## Ramesh Netheti 
