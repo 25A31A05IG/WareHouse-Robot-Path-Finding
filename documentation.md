@@ -45,20 +45,31 @@ The primary objectives of the project are:
 The application simulates robot navigation in a browser. It does not directly control physical robots, communicate with warehouse hardware, retrieve live sensor information, or integrate with an inventory management system.
 
 ## 4. Technology Stack
-
+```
 Technology| Purpose
-React| Builds the user interface and manages component state
-Vite| Provides the development server and production build
-JavaScript| Implements algorithms and application logic
-JSX| Defines React component interfaces
-CSS| Controls visual styling and responsive layout
-A*| Performs heuristic-guided pathfinding
-BFS| Performs level-by-level graph traversal
-DFS| Performs depth-first graph traversal
-Queue| Supports FIFO processing
-Priority Queue| Supports priority-based node selection
-Vercel| Hosts the production web application
 
+React| Builds the user interface and manages component state
+
+Vite| Provides the development server and production build
+
+JavaScript| Implements algorithms and application logic
+
+JSX| Defines React component interfaces
+
+CSS| Controls visual styling and responsive layout
+
+A*| Performs heuristic-guided pathfinding
+
+BFS| Performs level-by-level graph traversal
+
+DFS| Performs depth-first graph traversal
+
+Queue| Supports FIFO processing
+
+Priority Queue| Supports priority-based node selection
+
+Vercel| Hosts the production web application
+```
 ## 5. System Architecture
 
 The application is organized into algorithm modules, reusable interface components, utility functions, and data structures.
@@ -70,11 +81,11 @@ The application is organized into algorithm modules, reusable interface componen
 5.2 Algorithm Layer
 
 The algorithm modules calculate routes and search results for the current grid.
-
+```
 - "src/algorithms/astar.js"
 - "src/algorithms/bfs.js"
 - "src/algorithms/dfs.js"
-
+```
 5.3 Component Layer
 
 The components present the warehouse, controls, metrics, and task manager.
@@ -94,7 +105,7 @@ The components present the warehouse, controls, metrics, and task manager.
 "src/utils/gridUtils.js" provides grid-related operations, including grid creation, random obstacle generation, and cell comparison.
 
 ## 6. Directory Structure
-
+```
 warehouse-robot-pathfinding/
 ├── public/
 │   └── robot.svg
@@ -125,7 +136,7 @@ warehouse-robot-pathfinding/
 ├── eslint.config.js
 ├── README.md
 └── documentation.md
-
+```
 ## 7. Warehouse Grid Model
 
 The warehouse is represented by a two-dimensional grid. Each cell represents a possible robot position and may be blocked by an obstacle.
@@ -150,11 +161,11 @@ Displayed row = Internal row + 1
 Displayed column = Internal column + 1
 
 7.2 Default Positions
-
+```
 Element| Internal Position| Displayed Position
 Start| "{ row: 7, col: 3 }"| Row 8, Column 4
 Destination| "{ row: 7, col: 21 }"| Row 8, Column 22
-
+```
 The application validates grid edits so that the start and destination do not overlap or occupy blocked cells.
 
 ## 8. Pathfinding Algorithms
@@ -164,9 +175,9 @@ The application validates grid edits so that the start and destination do not ov
 A* is a heuristic-guided search algorithm. It uses the known cost of reaching a node and an estimate of the remaining cost to the destination.
 
 The evaluation function is commonly expressed as:
-
+```
 "f(n) = g(n) + h(n)"
-
+```
 Where:
 
 - "g(n)" is the cost from the start to the current node.
@@ -188,12 +199,15 @@ DFS explores one branch deeply before backtracking to another branch.
 DFS demonstrates traversal behavior, but it does not generally guarantee the shortest path.
 
 8.4 Algorithm Comparison
-
+```
 Algorithm| Strategy| Typical Data Structure| Shortest Path
-A*| Heuristic-guided search| Priority queue| Depends on heuristic and implementation
-BFS| Level-by-level exploration| Queue| Yes, for equal-cost moves
-DFS| Deep exploration before backtracking| Stack or recursion| Not guaranteed
 
+A*| Heuristic-guided search| Priority queue| Depends on heuristic and implementation
+
+BFS| Level-by-level exploration| Queue| Yes, for equal-cost moves
+
+DFS| Deep exploration before backtracking| Stack or recursion| Not guaranteed
+```
 The metrics shown in the interface depend on the values returned by the project's algorithm modules.
 
 ## 9. Data Structures
@@ -205,9 +219,9 @@ A queue follows the First In, First Out (FIFO) principle.
 The first item inserted into a queue is the first item removed. This principle is demonstrated by processing pickup tasks in their insertion order.
 
 The queue implementation is located at:
-
+```
 "src/data-structures/Queue.js"
-
+```
 9.2 Priority Queue
 
 A priority queue selects elements according to their priority rather than only their insertion order.
@@ -215,9 +229,9 @@ A priority queue selects elements according to their priority rather than only t
 This is useful for algorithms such as A*, which select the next candidate node based on its evaluation score.
 
 The implementation is located at:
-
+```
 "src/data-structures/PriorityQueue.js"
-
+```
 ## 10. Main Application Workflows
 
 10.1 Application Initialization
@@ -288,41 +302,42 @@ React state updates cause the affected interface components to render the latest
 ## 12. Installation
 
 12.1 Prerequisites
-
+```
 - Node.js
 - npm
 - Git, if cloning the repository
 - A modern web browser
-
+```
 12.2 Clone the Repository
 
 Replace the placeholder with the actual GitHub username:
-
+```
 git clone https://github.com/<your-github-username>/warehouse-robot-pathfinding.git
 cd warehouse-robot-pathfinding
-
+```
 If the project already exists on the computer, open its root directory instead.
 
 12.3 Install Dependencies
-
+```
 npm install
-
+```
 12.4 Start the Development Server
-
+```
 npm run dev
-
+```
+```
 Open the local URL shown in the terminal, usually "http://localhost:5173".
-
+```
 12.5 Build for Production
-
+```
 npm run build
-
+```
 The production build is normally generated in the "dist/" directory.
 
 12.6 Preview the Production Build
-
+```
 npm run preview
-
+```
 Check "package.json" for the exact scripts configured in the project.
 
 ## 13. Deployment to Vercel
@@ -331,14 +346,14 @@ Check "package.json" for the exact scripts configured in the project.
 2. Sign in to Vercel.
 3. Import the GitHub repository.
 4. Configure the build settings.
-
+```
 Setting| Value
 Framework Preset| Vite
 Root Directory| "./"
 Install Command| "npm install"
 Build Command| "npm run build"
 Output Directory| "dist"
-
+```
 5. Click Deploy.
 6. Open the generated deployment URL.
 7. Test the grid, algorithms, robot animation, and task queue.
@@ -371,24 +386,24 @@ Before deployment, verify:
 Node.js or npm is not recognized
 
 Check the installation:
-
+```
 node --version
 npm --version
-
+```
 Install Node.js if required, then reopen the terminal.
 
 Dependencies are missing
 
 Run:
-
+```
 npm install
-
+```
 The production build fails
 
 Run:
-
+```
 npm run build
-
+```
 Review the first meaningful error and check imports, file names, and package scripts.
 
 The robot cannot find a route
