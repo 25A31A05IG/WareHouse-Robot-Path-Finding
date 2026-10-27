@@ -1,9 +1,8 @@
-# WareHouse-Robot-Path-Finding
-An interactive warehouse robot pathfinding simulator built with React and Vite. Visualize autonomous robot navigation, manage pickup task queues using the FIFO principle, explore A* , BFS, and DFS algorithms, generate warehouse obstacles, and compare pathfinding performance in a grid-based environment.
-https://ware-house-robot-path-finding.vercel.app/...
 ## Warehouse Robot Pathfinding Simulator
 
 An interactive warehouse robot pathfinding simulator built with React, Vite, and JavaScript. The project demonstrates how autonomous robots can navigate a grid-based warehouse using pathfinding algorithms, avoid obstacles, visualize routes, and process pickup tasks using a FIFO queue.
+
+## Check it out here: https://ware-house-robot-path-finding.vercel.app/
 
 ## Features
 
