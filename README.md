@@ -25,19 +25,11 @@ The project brings fundamental computer science concepts to life through visual 
 
 ## Application Screenshots
 
-<p align="center">
-  <img src="docs/screenshots/warehouse-grid.png" alt="Warehouse grid interface" width="800" />
-  <br />
-  <em>Warehouse environment and robot navigation grid</em>
-</p><p align="center">
-  <img src="docs/screenshots/pathfinding-result.png" alt="Pathfinding result showing the discovered route" width="800" />
-  <br />
-  <em>Pathfinding visualization and calculated route</em>
-</p><p align="center">
-  <img src="docs/screenshots/algorithm-comparison.png" alt="Algorithm comparison interface" width="800" />
-  <br />
-  <em>Pathfinding algorithm results and metrics, if available in the application</em>
-</p>
+<img width="1080" height="865" alt="20261027_133536" src="https://github.com/user-attachments/assets/599544a8-7bb2-467c-9a32-045212328174" />
+
+<img width="999" height="524" alt="20261027_133556" src="https://github.com/user-attachments/assets/358d4a70-315c-4e0a-8d9d-6447a5d254d7" />
+
+<img width="1001" height="671" alt="20261027_133607" src="https://github.com/user-attachments/assets/ec56dde3-235f-42a3-9ac9-d76a3382106a" />
 
 ## Key Features
 
