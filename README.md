@@ -125,7 +125,7 @@ A* combines the cost already incurred with a heuristic estimate of the remaining
 
 BFS explores neighboring nodes level by level. With equal movement costs, it finds a shortest path when a route exists.
 
-#:Depth-First Search (DFS)
+# Depth-First Search (DFS)
 
 DFS explores one branch deeply before backtracking. It demonstrates graph traversal but does not generally guarantee the shortest path.
 
